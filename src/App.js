@@ -1,15 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Country from './components/Country/Country';
+import Person from './components/Person/Person';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <LoadCountries></LoadCountries>
+      <Header></Header>
+      <Country></Country>
+      <Person></Person>
+      {/* <LoadCountries></LoadCountries> */}
     </div>
   );
 }
 
+/* 
 function LoadCountries() {
   const [countries, setCountries] = useState([]);
 
@@ -37,6 +44,7 @@ function Country(props) {
       <h4>Population : {props.population}</h4>
     </div>
   )
-}
+} 
+*/
 
 export default App;
